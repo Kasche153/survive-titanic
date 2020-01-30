@@ -52,6 +52,13 @@ export const FinalScore = (props: IProps) => {
             >
               TO SCOREBOARD
             </Button>
+            <Button
+          className="play-again-button"
+          onClick={() => (window.location.href = "/")}
+        >
+          Play again
+        </Button>
+            
           </div>
         </div>
       </div>
