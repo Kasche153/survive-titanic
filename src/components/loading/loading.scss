@@ -1,0 +1,14 @@
+.loading {
+  animation: rotate 4s linear infinite;
+  width: 180px;
+  margin: auto;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

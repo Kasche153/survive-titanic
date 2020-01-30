@@ -1,0 +1,58 @@
+@import "src/App.scss";
+
+$break-small: 950px;
+$break-mid: 640px;
+
+.boat {
+  position: absolute;
+  color: white;
+  z-index: 10;
+  animation: view 2s linear;
+  img {
+    width: 100%;
+  }
+}
+
+@keyframes view {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.top-left {
+  width: 20vw;
+  top: 100px;
+  left: 0;
+}
+
+.top-right {
+  width: 40vh;
+  top: 20px;
+  right: 20px;
+
+  @media screen and(max-width:$break-small) {
+    transform: translate(0%, 70%);
+  }
+}
+
+.bottom-right-big {
+  width: 20vw;
+  bottom: 20px;
+  right: 30px;
+
+  @media screen and (max-width: $break-small) {
+    width: 20vw;
+    top: 20px;
+    right: 10px;
+  }
+}
+
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 600px) {
+  body {
+    background-color: olive;
+  }
+}

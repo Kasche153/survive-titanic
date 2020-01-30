@@ -1,0 +1,76 @@
+@import "src/style/colors";
+
+$break-small: 950px;
+
+.small-hide{
+  @media screen and (max-width:$break-small) {
+    display: none;
+
+  }
+
+}
+.small-show{
+  display: none;
+}
+
+.small-show{
+  @media screen and (max-width:$break-small) {
+    display: block;
+    
+  }
+
+}
+.body{
+  overflow:visible;
+  position: relative;
+  
+}
+
+
+
+
+
+    
+
+
+
+
+.topbar {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  margin: 0;
+  z-index: 100;
+  cursor: pointer;
+}
+.topbar-ext {
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  margin: 0;
+  background-color: $navy-blue;
+  border: white 1px solid;
+  animation: fromBottom linear 0.3s;
+  position: fixed;
+  z-index: 200;
+}
+
+.tree-container {
+  background-color: white;
+  height: 300px;
+  
+
+  @media screen and (max-width:$break-small) {
+    visibility: hidden;
+    
+
+  }
+}
+@keyframes fromBottom {
+  from {
+    transform: translate(0%, 100%);
+  }
+  to {
+    transform: translate(0%, -0%);
+  }
+}

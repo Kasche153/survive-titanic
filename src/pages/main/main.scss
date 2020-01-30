@@ -1,0 +1,16 @@
+$break-small: 950px;
+
+.about-link{
+    font-size: 5vh;
+    top:90vh;
+    position: fixed;
+} 
+
+@media screen and (max-width : $break-small) {
+    .about-link{
+    top: 90vh;
+    width: 100vw;
+    text-align: center;
+    width:100vw;
+    }
+}

@@ -1,0 +1,131 @@
+@import "src/style/colors";
+
+$break-small: 950px;
+
+
+
+* {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: white;
+}
+.middle {
+
+  margin: auto;
+}
+.flex {
+  display: flex;
+}
+
+body {
+  background-color: $navy-blue;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  font-family: cursive;
+  font-variant-alternates: historical-forms;
+
+  @media screen and (max-width:$break-small){
+
+    position :fixed;
+  }
+}
+
+h1 {
+  text-align: center;
+}
+.default-margin {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+h6 {
+  text-align: center;
+}
+
+.break {
+  height: 20px;
+}
+
+* {
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+.overflow-scroll {
+  overflow: scroll;
+}
+.small-text {
+  font-size: 8px;
+  line-height: 9px;
+}
+.height-20 {
+  height: 20vh;
+}
+h1 {
+  font-size: 4vw;
+
+  @media screen and  (max-width: $break-small){
+  font-size: 8vw;
+    
+  }
+
+  
+
+}
+h4 {
+  font-size: 18px;
+}
+.right {
+  float: right;
+  text-align: right;
+
+  
+
+  }
+.left {
+  float: left;
+}
+.width-50 {
+  width: 50%;
+}
+.width-60 {
+  width: 60%;
+}
+.super-big-text {
+  font-size: 12vw;
+
+  @media screen and (max-width: $break-small) {
+    transform: translate(80%,-100%);
+    font-size: 50px;
+        
+    }
+}
+.medium-text {
+  font-size: 6vw;
+  @media screen and (max-width: $break-small) {
+    
+    
+  }
+}
+.width-75 {
+  width: 75%;
+}
+.height-100 {
+  height: 100vh;
+}
+.height-25 {
+  height: 25vh;
+}
+.center-vertical {
+  margin-top: auto;
+}
+.small-panel-right {
+  position: absolute;
+  width: 15%;
+  bottom: 0;
+}
+

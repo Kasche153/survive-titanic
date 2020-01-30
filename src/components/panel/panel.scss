@@ -1,0 +1,31 @@
+$break-small: 950px;
+
+.panel {
+  padding: 40px;
+  width: 40vw;
+  position: absolute;
+  top: 50vh;
+  left: 50vw;
+  transform: translate(-50%, -50%);
+  border-radius: 30px;
+  
+  display: flex;
+
+
+  @media screen and(max-width:$break-small) {
+    height: 80vh;
+    width: 50vh;
+    padding : 10vh;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    transform: translate(-50%, -70%);
+    
+    
+   
+    
+  }
+  
+  
+    
+  
+}
